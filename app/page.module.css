@@ -3,8 +3,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  width: 100%;
   min-height: 100vh;
+  background-color: #343433;
+}
+
+.titleBar {
+  background-color: #0149B7;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.titleText {
+  color: #FFF;
+  font-size: 96px;
+  text-align: center;
 }
 
 .description {
@@ -16,6 +29,47 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+}
+
+.content {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.molImages {
+  min-width: 60%;
+}
+
+.modalBar {
+  background-color: #0149B7;
+  min-width: 20%;
+  max-width: 520px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  right: 0;
+  padding: 24px 16px 24px 64px;
+}
+
+.modalText {
+  color: #FFF;
+}
+
+.descriptionBar {
+  width: 100%;
+  background: rgb(222,216,203);
+  background: linear-gradient(90deg, rgba(222,216,203,1) 0%, rgba(232,230,217,1) 50%, rgba(253,251,238,1) 100%);
+  padding: 32px 64px;
+}
+
+.descriptionText {
+  color: #000;
+}
+
+.mapContainer { 
+  height: 600px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 .description a {
