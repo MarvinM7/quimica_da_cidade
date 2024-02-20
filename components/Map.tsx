@@ -7,7 +7,7 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 
 import "leaflet-defaulticon-compatibility";
 // END: Preserve spaces to avoid auto-sorting
-import { FeatureGroup, MapContainer, Marker, Polygon, Popup, TileLayer, useMapEvents } from "react-leaflet";
+import { FeatureGroup, MapContainer, Marker, Polygon, Popup, TileLayer } from "react-leaflet";
 
 export default function Map() {
   const center = {
@@ -33,22 +33,24 @@ export default function Map() {
   ];
 
   function DraggableMarker() {
-    const [draggable, setDraggable] = useState(true)
-    const [position, setPosition] = useState(center)
-    const markerRef = useRef(null)
+    const [draggable, setDraggable] = useState(true);
+    const [position, setPosition] = useState(center);
+    const markerRef = useRef<any>(null);
+
     const eventHandlers = useMemo(
       () => ({
         dragend() {
-          const marker = markerRef.current
+          const marker = markerRef.current;
+          
           if (marker != null) {
-            navigator.clipboard.writeText(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}],`);
+            navigator.clipboard.writeText(`[${marker.getLatLng().lat}, ${marker?.getLatLng().lng}],`);
             console.log(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}],`);
             setPosition(marker.getLatLng())
           }
         },
       }),
       [],
-    )
+    );
   
     return (
       <Marker
