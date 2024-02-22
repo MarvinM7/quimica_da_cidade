@@ -230,9 +230,9 @@ export default function Home() {
         </svg>
       </div>
 
-      {/* <div id="map" className={styles.mapContainer}>
+      <div id="map" className={styles.mapContainer}>
         <LazyMap />
-      </div> */}
+      </div>
 
       <div className={styles.descriptionBar}>
         <div className={styles.descriptionText}>
