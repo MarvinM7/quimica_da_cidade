@@ -50,28 +50,37 @@ export default function Home() {
       <div className={styles.chartContainer}>
         <div className={styles.barChartContainer}>
           <div className={styles.barChartColumn} style={{height: '200px'}}>
-            <div className={styles.barChartBlock1}></div>
-            <div className={styles.barChartBlock2}></div>
+            <div className={styles.barChartBlock1} style={{height: '200px'}}></div>
+            <div className={styles.barChartBlock2} style={{height: '0px'}}></div>
+            <div className={styles.borderBottom1}></div>
           </div>
           <div className={styles.barChartColumn} style={{height: '350px'}}>
             <div className={styles.barChartBlock1} style={{height: '142px'}}></div>
             <div className={styles.barChartBlock2} style={{height: '208px'}}></div>
+            <div className={styles.borderBottom2} style={{marginLeft: '4px'}}></div>
           </div>
           <div className={styles.barChartColumn} style={{height: '150px'}}>
             <div className={styles.barChartBlock1} style={{height: '92px'}}></div>
             <div className={styles.barChartBlock2} style={{height: '58px'}}></div>
+            <div className={styles.borderBottom2} style={{marginLeft: '4px'}}></div>
+            <div className={styles.borderBottom3} style={{height: '208px', marginTop: '-8px'}}></div>
           </div>
           <div className={styles.barChartColumn} style={{height: '100px'}}>
-            <div className={styles.barChartBlock1}></div>
-            <div className={styles.barChartBlock2}></div>
+            <div className={styles.barChartBlock1} style={{height: '100px'}}></div>
+            <div className={styles.barChartBlock2} style={{height: '0px'}}></div>
+            <div className={styles.borderBottom1}></div>
+            <div className={styles.borderBottom3} style={{height: '58px', marginTop: '-8px'}}></div>
           </div>
           <div className={styles.barChartColumn} style={{height: '400px'}}>
             <div className={styles.barChartBlock1} style={{height: '192px'}}></div>
             <div className={styles.barChartBlock2} style={{height: '208px'}}></div>
+            <div className={styles.borderBottom2} style={{marginLeft: '4px'}}></div>
           </div>
           <div className={styles.barChartColumn} style={{height: '200px'}}>
-            <div className={styles.barChartBlock1}></div>
-            <div className={styles.barChartBlock2}></div>
+            <div className={styles.barChartBlock1} style={{height: '200px'}}></div>
+            <div className={styles.barChartBlock2} style={{height: '0px'}}></div>
+            <div className={styles.borderBottom1}></div>
+            <div className={styles.borderBottom3} style={{height: '208px', marginTop: '-8px'}}></div>
           </div>
         </div>
         <div className={styles.chartText}>
