@@ -1,0 +1,43 @@
+.SVGContainer {
+  width: 771px;
+  height: 859px;
+}
+
+.path {
+  fill: #b7b7b7;
+  cursor: pointer;
+  stroke-width: 0px;
+}
+
+.path:hover {
+  fill: purple;
+  stroke: #000;
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}
+
+.park {
+  opacity: 0.8;
+}
+
+.cyclePath {
+  fill: none;
+  stroke: #efd345;
+  stroke-miterlimit: 10;
+}
+
+.checkBoxContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.checkBox {
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.checkBoxLabel {
+  cursor: pointer;
+}
