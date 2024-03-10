@@ -292,14 +292,14 @@ const Map = () => {
       </div>
 
       <div className={styles.checkBoxContainer}>
-        <div>
-          <input className={styles.checkBox} type="checkbox" id='parks' checked={showParks} onChange={(e) => setShowParks(e.target.checked)} />
-          <label className={styles.checkBoxLabel} htmlFor='parks' >Parques</label>
+        <div className={"form-check"}>
+          <input className={`${'form-check-input'} ${styles.checkBox} ${styles.formCheckInput}`} type="checkbox" id="parks" checked={showParks} onChange={(e) => setShowParks(e.target.checked)} />
+          <label className={`${'form-check-label'} ${styles.checkBoxLabel}`} htmlFor="parks">Parques</label>
         </div>
 
-        <div>
-          <input className={styles.checkBox} type="checkbox" id='cyclePaths' checked={showCyclePaths} onChange={(e) => setShowCyclePaths(e.target.checked)} />
-          <label className={styles.checkBoxLabel} htmlFor='cyclePaths' >Ciclovias</label>
+        <div className={"form-check"}>
+          <input className={`${'form-check-input'} ${styles.checkBox} ${styles.formCheckInput}`} type="checkbox" id="cyclePaths" checked={showCyclePaths} onChange={(e) => setShowCyclePaths(e.target.checked)} />
+          <label className={`${'form-check-label'} ${styles.checkBoxLabel}`} htmlFor="cyclePaths">Ciclovias</label>
         </div>
       </div>
     </>

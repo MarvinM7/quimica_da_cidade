@@ -36,8 +36,21 @@
 .checkBox {
   cursor: pointer;
   margin-right: 12px;
+  outline: #EED345 !important;
+}
+
+.formCheckInput:checked {
+  background-color: #EED345 !important;
+  border-color: #EED345 !important;
+}
+
+.formCheckInput:focus {
+  border-color: #efd345 !important;
+  box-shadow: 0 0 0 .25rem rgba(239, 211, 69, 0.25) !important;
+  ;
 }
 
 .checkBoxLabel {
   cursor: pointer;
+  color: #F9F7EA;
 }
