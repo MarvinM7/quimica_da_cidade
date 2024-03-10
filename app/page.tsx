@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import Map from '@/components/Map';
+import Chart from '@/components/Chart';
 
 import styles from "./page.module.css";
 
@@ -20,8 +21,8 @@ export default function Home() {
 
   const labelText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.';
 
-  const chartTitle = 'Lorem ipsum dolor sit amet';
   const chartText = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.\nLorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.';
+  const chartTitle = 'Lorem ipsum dolor sit amet';
 
   return (
     <main className={styles.main}>
@@ -62,46 +63,7 @@ export default function Home() {
       </section>
 
       <section className={styles.chartContainer}>
-        <div className={styles.barChartContainer}>
-          <div className={styles.barChartColumn} style={{height: '200px'}}>
-            <div className={styles.barChartBlock1} style={{height: '200px'}}></div>
-            <div className={styles.barChartBlock2} style={{height: '0px'}}></div>
-            <div className={styles.borderBottom1}></div>
-          </div>
-          <div className={styles.barChartColumn} style={{height: '350px'}}>
-            <div className={styles.barChartBlock1} style={{height: '142px'}}></div>
-            <div className={styles.barChartBlock2} style={{height: '208px'}}></div>
-            <div className={styles.borderBottom2} style={{marginLeft: '4px'}}></div>
-          </div>
-          <div className={styles.barChartColumn} style={{height: '150px'}}>
-            <div className={styles.barChartBlock1} style={{height: '92px'}}></div>
-            <div className={styles.barChartBlock2} style={{height: '58px'}}></div>
-            <div className={styles.borderBottom2} style={{marginLeft: '4px'}}></div>
-            <div className={styles.borderBottom3} style={{height: '208px', marginTop: '-8px'}}></div>
-          </div>
-          <div className={styles.barChartColumn} style={{height: '100px'}}>
-            <div className={styles.barChartBlock1} style={{height: '100px'}}></div>
-            <div className={styles.barChartBlock2} style={{height: '0px'}}></div>
-            <div className={styles.borderBottom1}></div>
-            <div className={styles.borderBottom3} style={{height: '58px', marginTop: '-8px'}}></div>
-          </div>
-          <div className={styles.barChartColumn} style={{height: '400px'}}>
-            <div className={styles.barChartBlock1} style={{height: '192px'}}></div>
-            <div className={styles.barChartBlock2} style={{height: '208px'}}></div>
-            <div className={styles.borderBottom2} style={{marginLeft: '4px'}}></div>
-          </div>
-          <div className={styles.barChartColumn} style={{height: '200px'}}>
-            <div className={styles.barChartBlock1} style={{height: '200px'}}></div>
-            <div className={styles.barChartBlock2} style={{height: '0px'}}></div>
-            <div className={styles.borderBottom1}></div>
-            <div className={styles.borderBottom3} style={{height: '208px', marginTop: '-8px'}}></div>
-          </div>
-        </div>
-        <div className={styles.chartInfo}>
-          <div className={styles.chartTitle}>{chartTitle}</div>
-          <div className={styles.chartText}>{chartText}</div>
-        </div>
-        <div className={styles.bottomBar} />
+        <Chart chartText={chartText} chartTitle={chartTitle} />
       </section>
     </main>
   );
