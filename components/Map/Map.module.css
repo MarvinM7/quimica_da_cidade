@@ -31,7 +31,7 @@
 .path:hover {
   fill: #EAB42C;
   stroke: #000;
-  stroke-width: 3px;
+  stroke-width: 2px;
   transition: fill 0.4s;
 }
 
@@ -41,7 +41,8 @@
 
 .cyclePath {
   fill: none;
-  stroke: #efd345;
+  stroke: #FFF852;
+  stroke-width: 3px;
   stroke-miterlimit: 10;
 }
 
