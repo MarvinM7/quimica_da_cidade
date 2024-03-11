@@ -3,9 +3,10 @@
   padding: 24px 64px 40px 64px;
 }
 
-.video {
+.gif {
   float: right;
   margin-left: 40px;
+  margin-top: 80px;
 }
 
 .title {
