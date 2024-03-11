@@ -2,14 +2,29 @@
 
 import { useState } from "react";
 
+import { League_Gothic } from 'next/font/google';
+
 import styles from "./Map.module.css";
 
-const Map = () => {
+interface MapProps {
+  title: string;
+  text1: string;
+  text2: string;
+}
+
+const leagueGhotic = League_Gothic({
+  weight: '400',
+  subsets: ['latin'],
+})
+
+const Map = ({title, text1, text2}: MapProps) => {
   const [showParks, setShowParks] = useState(false);
   const [showCyclePaths, setShowCyclePaths] = useState(false);
 
   return (
     <>
+      <div className={`${leagueGhotic.className} ${styles.title}`}>{title}</div>
+      <div className={styles.text}>{text1}</div>
       <div className={styles.SVGContainer}>
         <svg
           id="Camada_1"
@@ -302,6 +317,8 @@ const Map = () => {
           <label className={`${'form-check-label'} ${styles.checkBoxLabel}`} htmlFor="cyclePaths">Ciclovias</label>
         </div>
       </div>
+
+      <div className={styles.text}>{text2}</div>
     </>
   )
 };

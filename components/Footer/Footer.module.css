@@ -1,0 +1,17 @@
+.container {
+  padding: 0px 64px 64px 64px;
+}
+
+.title {
+  color: #DAD9D9;
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  text-decoration: underline #EED345;
+  text-underline-offset: 10px;
+}
+
+.text {
+  color: #EED345;
+  font-size: 14px;
+}

@@ -48,13 +48,16 @@
 }
 
 .chartTitle {
-  color: #EED345;
+  color: #EAB42C;
   font-size: 28px;
   margin-bottom: 20px;
+  padding: 10px 0px;
+  text-decoration: underline #000;
+  text-underline-offset: 10px;
 }
 
 .chartText {
-  color: #F9F7EA;
+  color: #D9D9D9;
   font-size: 14px;
   white-space: pre-line;
 }

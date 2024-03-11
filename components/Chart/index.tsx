@@ -1,3 +1,5 @@
+import { League_Gothic } from 'next/font/google';
+
 import neighborhoods from "@/constants/Neighborhoods";
 
 import styles from "./Chart.module.css";
@@ -6,6 +8,11 @@ interface ChartProps {
   chartText: string;
   chartTitle: string;
 }
+
+const leagueGhotic = League_Gothic({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 const Chart = ({chartText, chartTitle}: ChartProps) => {
   const constant = 30;
@@ -86,7 +93,7 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
         })}
       </div>
       <div className={styles.chartInfo}>
-        <div className={styles.chartTitle}>{chartTitle}</div>
+        <div className={`${leagueGhotic.className} ${styles.chartTitle}`}>{chartTitle}</div>
         <div className={styles.chartText}>{chartText}</div>
       </div>
       <div className={styles.bottomBar} />
