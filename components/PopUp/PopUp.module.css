@@ -1,0 +1,11 @@
+.container {
+  position: absolute;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.text {
+  color: #464648;
+}

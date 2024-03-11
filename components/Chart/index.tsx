@@ -1,4 +1,10 @@
+"use client"
+
+import { useState } from 'react';
+
 import { League_Gothic } from 'next/font/google';
+
+import PopUp from "@/components/PopUp";
 
 import neighborhoods from "@/constants/Neighborhoods";
 
@@ -16,6 +22,13 @@ const leagueGhotic = League_Gothic({
 
 const Chart = ({chartText, chartTitle}: ChartProps) => {
   const constant = 30;
+  const initialPopUp = {
+    ivat: 0,
+    neighborhood: '',
+    show: false,
+  }
+
+  const [popup, setPopUp] = useState(initialPopUp)
 
   const block1 = (index: number) => {
     if (index === neighborhoods.length - 1) {
@@ -83,7 +96,26 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
       <div className={styles.barChartContainer}>
         {neighborhoods.map((neighborhood, index) => {
           return (
-            <div key={neighborhood.name} className={styles.barChartColumn} style={{height: `${neighborhood.value * constant}px`}}>
+            <div
+              key={neighborhood.name}
+              className={styles.barChartColumn}
+              onMouseEnter={() => {
+                setPopUp({
+                  ivat: neighborhood.value,
+                  neighborhood: neighborhood.name,
+                  show: true,
+                })
+              }}
+              onMouseLeave={() => {
+                setPopUp(initialPopUp);
+              }}
+              style={{height: `${neighborhood.value * constant}px`}}
+            >
+              <PopUp
+                ivat={popup.ivat}
+                neighborhood={popup.neighborhood}
+                show={popup.show && neighborhood.value === popup.ivat}
+              />
               {block1(index)}
               {block2(index)}
               {borderBottom(index)}
