@@ -1,5 +1,5 @@
 interface Neighborhood {
-  ivat: number;
+  iavt: number;
   name: string;
   rpa: string;
 }

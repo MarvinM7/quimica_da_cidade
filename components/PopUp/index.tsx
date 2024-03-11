@@ -42,14 +42,17 @@ const PopUp = ({data, show, showMany}: PopUpProps) => {
     <div className={styles.container} style={{top: position.top, left: position.left}}>
       <div className={styles.row}>
         <div className={styles.title}>Bairro</div>
-        <div className={styles.title}>Valor (IVAT)</div>
+        <div className={styles.title}>Valor (IAVT)<span>*</span></div>
       </div>
       {data.map((neighborhood) => (
         <div key={neighborhood.name} className={styles.row}>
           <div className={styles.text}>{neighborhood.name}</div>
-          <div className={styles.text}>{`${neighborhood.ivat} m²/hab`}</div>
+          <div className={styles.text}>{`${neighborhood.iavt} m²/hab`}</div>
         </div>
       ))}
+      <div className={styles.subtitle}>
+        <div className={styles.text}><span>*</span>IAVT - Índice de Área Verde Total</div>
+      </div>
     </div>
   )
 }

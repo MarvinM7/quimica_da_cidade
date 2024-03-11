@@ -23,7 +23,7 @@ const leagueGhotic = League_Gothic({
 const Chart = ({chartText, chartTitle}: ChartProps) => {
   const constant = 30;
   const initialPopUp = {
-    ivat: 0,
+    iavt: 0,
     name: '',
     rpa: '',
   }
@@ -32,15 +32,15 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
 
   const block1 = (index: number) => {
     if (index === neighborhoods.length - 1) {
-      return <div className={styles.barChartBlock1} style={{height: `${neighborhoods[index].ivat * constant}px`}}></div>;
+      return <div className={styles.barChartBlock1} style={{height: `${neighborhoods[index].iavt * constant}px`}}></div>;
     }
 
-    if (neighborhoods[index].ivat < neighborhoods[index + 1].ivat) {
-      return <div className={styles.barChartBlock1} style={{height: `${neighborhoods[index].ivat * constant}px`}}></div>;
+    if (neighborhoods[index].iavt < neighborhoods[index + 1].iavt) {
+      return <div className={styles.barChartBlock1} style={{height: `${neighborhoods[index].iavt * constant}px`}}></div>;
     }
 
-    if (neighborhoods[index].ivat > neighborhoods[index + 1].ivat) {
-      return <div className={styles.barChartBlock1} style={{height: `${(neighborhoods[index + 1].ivat * constant)}px`}}></div>;
+    if (neighborhoods[index].iavt > neighborhoods[index + 1].iavt) {
+      return <div className={styles.barChartBlock1} style={{height: `${(neighborhoods[index + 1].iavt * constant)}px`}}></div>;
     }
 
     return null;
@@ -51,12 +51,12 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
       return <div className={styles.barChartBlock2} style={{height: '0px'}}></div>;
     }
 
-    if (neighborhoods[index].ivat < neighborhoods[index + 1].ivat) {
+    if (neighborhoods[index].iavt < neighborhoods[index + 1].iavt) {
       return <div className={styles.barChartBlock2} style={{height: '0px'}}></div>;
     }
 
-    if (neighborhoods[index].ivat > neighborhoods[index + 1].ivat) {
-      return <div className={styles.barChartBlock2} style={{height: `${(neighborhoods[index].ivat * constant) - (neighborhoods[index + 1].ivat * constant)}px`}}></div>;
+    if (neighborhoods[index].iavt > neighborhoods[index + 1].iavt) {
+      return <div className={styles.barChartBlock2} style={{height: `${(neighborhoods[index].iavt * constant) - (neighborhoods[index + 1].iavt * constant)}px`}}></div>;
     }
 
     return null;
@@ -68,11 +68,11 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
       return <div className={styles.borderBottom1}></div>;
     }
 
-    if (neighborhoods[index].ivat < neighborhoods[index + 1].ivat) {
+    if (neighborhoods[index].iavt < neighborhoods[index + 1].iavt) {
       return <div className={styles.borderBottom1}></div>
     }
 
-    if (neighborhoods[index].ivat > neighborhoods[index + 1].ivat) {
+    if (neighborhoods[index].iavt > neighborhoods[index + 1].iavt) {
       return <div className={styles.borderBottom2} style={{marginLeft: '2px'}}></div>
     }
 
@@ -84,8 +84,8 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
       return null;
     }
 
-    if (neighborhoods[index].ivat < neighborhoods[index - 1].ivat) {
-      return <div className={styles.borderBottom3} style={{height: `${(neighborhoods[index - 1].ivat * constant) - (neighborhoods[index].ivat * constant) + 4}px`, marginTop: '-4px'}}></div>;
+    if (neighborhoods[index].iavt < neighborhoods[index - 1].iavt) {
+      return <div className={styles.borderBottom3} style={{height: `${(neighborhoods[index - 1].iavt * constant) - (neighborhoods[index].iavt * constant) + 4}px`, marginTop: '-4px'}}></div>;
     }
 
     return null;
@@ -101,7 +101,7 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
               className={styles.barChartColumn}
               onMouseEnter={() => {
                 setPopUp({
-                  ivat: neighborhood.ivat,
+                  iavt: neighborhood.iavt,
                   name: neighborhood.name,
                   rpa: neighborhood.rpa,
                 })
@@ -109,11 +109,11 @@ const Chart = ({chartText, chartTitle}: ChartProps) => {
               onMouseLeave={() => {
                 setPopUp(initialPopUp);
               }}
-              style={{height: `${neighborhood.ivat * constant}px`}}
+              style={{height: `${neighborhood.iavt * constant}px`}}
             >
               <PopUp
                 data={[popup]}
-                show={neighborhood.ivat === popup.ivat}
+                show={neighborhood.iavt === popup.iavt}
               />
               {block1(index)}
               {block2(index)}

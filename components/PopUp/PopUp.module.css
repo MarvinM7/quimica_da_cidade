@@ -22,3 +22,8 @@
 .text {
   color: #464648;
 }
+
+.subtitle {
+  border-top: 1px solid #464648;
+  padding-top: 10px;
+}
