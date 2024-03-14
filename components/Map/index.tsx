@@ -8,7 +8,7 @@ import PopUp from "@/components/PopUp";
 import PopUpPark from "@/components/PopUpPark";
 
 import neighborhoods from "@/constants/Neighborhoods";
-import { park1, park2, park3, park4, park5, park6, park7, park8, park9, park10 } from "@/constants/Parks";
+import { park1, park2, park3, park4, park5, park6, park7, park8, park9, park10, park11, park12 } from "@/constants/Parks";
 
 import { Neighborhood, Park } from "@/types";
 
@@ -784,13 +784,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#5e658cf856)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park9);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park9}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 328, 431)">
                   <g clipPath="url(#6e4b718d76)">
@@ -810,13 +810,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#82bb013c0f)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park9);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park9}`}
               >
                 <g clipPath="url(#2e93a5dc38)">
                   <path
@@ -830,13 +830,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#3d515534dd)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park9);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park9}`}
               >
                 <g clipPath="url(#d639f33879)">
                   <path
@@ -850,13 +850,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#2aa4f9d486)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park8);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park8}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 344, 534)">
                   <g clipPath="url(#530b8ba543)">
@@ -876,13 +876,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#1488381184)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park8);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park8}`}
               >
                 <g clipPath="url(#a39858fdfb)">
                   <path
@@ -896,13 +896,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#8d6480da0e)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park8);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park8}`}
               >
                 <g clipPath="url(#7988db7604)">
                   <path
@@ -916,13 +916,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#bd714f5e28)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park5);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park5}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 415, 345)">
                   <g clipPath="url(#d44c4eabdc)">
@@ -942,13 +942,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#63fdc9e11e)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park5);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park5}`}
               >
                 <g clipPath="url(#049dfa1e56)">
                   <path
@@ -962,13 +962,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#74eaefc626)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park5);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park5}`}
               >
                 <g clipPath="url(#ef280a0af0)">
                   <path
@@ -1048,13 +1048,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#4d06288012)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park6);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park6}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 325, 312)">
                   <g clipPath="url(#7df3082716)">
@@ -1074,13 +1074,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#27980baba9)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park6);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park6}`}
               >
                 <g clipPath="url(#7e10a98f86)">
                   <path
@@ -1094,13 +1094,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#079e3a1ff6)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park6);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park6}`}
               >
                 <g clipPath="url(#cf84f89a23)">
                   <path
@@ -1114,13 +1114,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#851635294b)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park2);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park2}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 362, 286)">
                   <g clipPath="url(#1a4970a1b9)">
@@ -1140,13 +1140,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#64a05c69f4)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park2);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park2}`}
               >
                 <g clipPath="url(#3953799ff6)">
                   <path
@@ -1160,13 +1160,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#bfb0f3ab7e)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park2);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park2}`}
               >
                 <g clipPath="url(#f588383c5a)">
                   <path
@@ -1180,13 +1180,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#d3e5a3d0c0)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park12);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park12}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 358, 305)">
                   <g clipPath="url(#7f0b7a71b3)">
@@ -1206,13 +1206,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#e2d9f70249)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park12);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park12}`}
               >
                 <g clipPath="url(#4b95b19a78)">
                   <path
@@ -1226,13 +1226,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#a69a3f53f4)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park12);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park12}`}
               >
                 <g clipPath="url(#b514cb76e0)">
                   <path
@@ -1246,13 +1246,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#d112c95d56)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park10);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park10}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 338, 286)">
                   <g clipPath="url(#9549836ba9)">
@@ -1272,13 +1272,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#b38c2bb933)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park10);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park10}`}
               >
                 <g clipPath="url(#d19f654718)">
                   <path
@@ -1292,13 +1292,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#c086720893)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park10);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park10}`}
               >
                 <g clipPath="url(#8bf2273e2e)">
                   <path
@@ -1312,13 +1312,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#feab93ba34)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park3);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park3}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 279, 229)">
                   <g clipPath="url(#676fad6b42)">
@@ -1338,25 +1338,15 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#38eae55a3a)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park3);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park3}`}
               >
-                <g clipPath="url(#e74083055a)"
-                  onMouseEnter={() => {
-                    setShowParkInfo(true);
-                    setParkInfo(park1);
-                  }}
-                  onMouseLeave={() => {
-                    setShowParkInfo(false);
-                    setParkInfo({} as Park);
-                  }}
-                  className={`${styles.park} ${styles.park1}`}
-                >
+                <g clipPath="url(#e74083055a)">
                   <path
                     fill="#eed342"
                     d="M 285.765625 235.484375 L 312.753906 235.484375 L 312.753906 262.476562 L 285.765625 262.476562 Z M 285.765625 235.484375 "
@@ -1368,13 +1358,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#81d25209f1)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park3);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park3}`}
               >
                 <g clipPath="url(#f08c7ce3e4)">
                   <path
@@ -1388,13 +1378,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#0bac65b127)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park11);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park11}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 287, 263)">
                   <g clipPath="url(#edac831d4d)">
@@ -1414,13 +1404,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#400f7ac834)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park11);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park11}`}
               >
                 <g clipPath="url(#290f61d589)">
                   <path
@@ -1434,13 +1424,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#11521c0d56)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park11);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park11}`}
               >
                 <g clipPath="url(#c5d1fe93a6)">
                   <path
@@ -1454,13 +1444,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g mask="url(#30a879952f)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park4);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park4}`}
               >
                 <g transform="matrix(1, 0, 0, 1, 361, 570)">
                   <g clipPath="url(#b5a59a771a)">
@@ -1480,13 +1470,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#9707b729cb)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park4);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park4}`}
               >
                 <g clipPath="url(#57d5904120)">
                   <path
@@ -1500,13 +1490,13 @@ const Map = ({title, text1, text2, subtitle}: MapProps) => {
               <g clipPath="url(#d05081bda6)"
                 onMouseEnter={() => {
                   setShowParkInfo(true);
-                  setParkInfo(park1);
+                  setParkInfo(park4);
                 }}
                 onMouseLeave={() => {
                   setShowParkInfo(false);
                   setParkInfo({} as Park);
                 }}
-                className={`${styles.park} ${styles.park1}`}
+                className={`${styles.park} ${styles.park4}`}
               >
                 <g clipPath="url(#70095d6d84)">
                   <path

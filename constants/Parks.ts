@@ -23,7 +23,7 @@ const park4 = {
 }
 
 const park5 = {
-  name: '13 de Maio',
+  name: 'Parque 13 de Maio',
   neighborhood: 'Boa Vista',
   area: '6,9 hectares',
 }
@@ -58,6 +58,18 @@ const park10 = {
   area: '6,5 hectares',
 }
 
+const park11 = {
+  name: 'Parque de Apipucos',
+  neighborhood: 'Apipucos',
+  area: '13.600 m²',
+}
+
+const park12 = {
+  name: 'Jardim do Baobá',
+  neighborhood: 'Bairro das Graças',
+  area: '2.200 m²',
+}
+
 export {
-  park1, park2, park3, park4, park5, park6, park7, park8, park9, park10,
+  park1, park2, park3, park4, park5, park6, park7, park8, park9, park10, park11, park12
 }
