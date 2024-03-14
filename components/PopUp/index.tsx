@@ -9,10 +9,9 @@ import styles from './PopUp.module.css';
 interface PopUpProps {
   data: Neighborhood[];
   show: boolean;
-  showMany?: boolean;
 }
 
-const PopUp = ({data, show, showMany}: PopUpProps) => {
+const PopUp = ({data, show}: PopUpProps) => {
   const [position, setPosition] = useState({
     top: 0,
     left: 0,

@@ -13,8 +13,15 @@
   white-space: pre-line;
 }
 
+.subtitle {
+  margin-top: -10px;
+  margin-bottom: 64px;
+  color: #D9D9D9;
+  font-size: 11px;
+  white-space: pre-line;
+}
+
 .SVGContainer {
-  margin-top: 64px;
   width: 100%;
   height: 859px;
   display: flex;
@@ -36,22 +43,27 @@
 }
 
 .park {
-  opacity: 0.8;
+
+}
+
+.park:hover {
+  cursor: pointer;
 }
 
 .cyclePath {
   fill: none;
   stroke: #FFF852;
   stroke-width: 3px;
+  stroke-opacity: 1px;
   stroke-miterlimit: 10;
 }
 
 .checkBoxContainer {
+  margin-top: 64px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 64px;
 }
 
 .checkBox {
@@ -75,3 +87,4 @@
   cursor: pointer;
   color: #F9F7EA;
 }
+
